@@ -1,0 +1,149 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreInformationChangeRequestActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/label_store_legal_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/title_label_store_legal_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:nextFocusUp="@id/label_store_legal_name" 
+            android:nextFocusLeft="@id/label_store_legal_name" />
+
+        <EditText
+            android:id="@+id/edit_store_legal_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/label_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/title_label_address"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/edit_store_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine">
+            
+        </EditText>
+
+        <TextView
+            android:id="@+id/label_store_channel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/title_label_store_channel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner_store_channel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/label_store_service_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/title_label_store_service_type"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner_store_service_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/label_store_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/title_label_store_type"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner_store_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox_head_office"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/title_checkBox_head_office" />
+
+        <CheckBox
+            android:id="@+id/checkBox_distribution_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/title_checkBox_distribution_center" />
+
+        <CheckBox
+            android:id="@+id/checkBox_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/title_checkBox_store" />
+
+        <CheckBox
+            android:id="@+id/checkBox_point_of_order_taking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/title_checkBox_point_of_order_taking" />
+
+        <CheckBox
+            android:id="@+id/checkBox_wellcome_offer_separate_payment_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:text="@string/title_checkBox_wellcome_offer_separate_payment_discount" />
+
+        <CheckBox
+            android:id="@+id/checkBox_golden_offer_separate_payment_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:text="@string/title_checkBox_golden_offer_separate_payment_discount" />
+
+        <CheckBox
+            android:id="@+id/checkBox_inactive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:text="@string/title_checkBox_inactive">
+            <requestFocus />
+        </CheckBox>
+
+    </LinearLayout>
+
+</ScrollView>

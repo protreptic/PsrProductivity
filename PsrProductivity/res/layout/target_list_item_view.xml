@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dip"
+    android:background="@color/light_grey"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/target_index"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/target_index_label"
+        android:gravity="top"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/target_index_label"
+        android:layout_width="80dip"
+        android:layout_height="20dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:text="@string/index"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+    <TextView
+        android:id="@+id/target_gap"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_below="@+id/target_gap_label"
+        android:layout_toLeftOf="@+id/target_index"
+        android:gravity="top"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/target_gap_label"
+        android:layout_width="80dip"
+        android:layout_height="20dip"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/target_index"
+        android:gravity="bottom"
+        android:text="@string/gap"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+
+      <TextView
+          android:id="@+id/target_fact"
+          android:layout_width="80dip"
+          android:layout_height="40dip"
+          android:layout_below="@+id/target_plan_label1"
+          android:layout_toLeftOf="@+id/target_gap"
+          android:gravity="top"
+          android:textAppearance="?android:attr/textAppearanceSmall" />
+
+      <TextView
+          android:id="@+id/target_plan_label1"
+          android:layout_width="80dip"
+          android:layout_height="20dip"
+          android:layout_alignParentTop="true"
+          android:layout_toLeftOf="@+id/target_gap"
+          android:gravity="bottom"
+          android:text="@string/fact"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textColor="@color/grey" />
+    
+    <TextView
+        android:id="@+id/target_plan"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_below="@+id/target_fact_label1"
+        android:layout_toLeftOf="@+id/target_fact"
+        android:gravity="top"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+       <TextView
+           android:id="@+id/target_fact_label1"
+           android:layout_width="80dip"
+           android:layout_height="20dip"
+           android:layout_alignParentTop="true"
+           android:layout_toLeftOf="@+id/target_fact"
+           android:gravity="bottom"
+           android:text="@string/plan"
+           android:textAppearance="?android:attr/textAppearanceSmall"
+           android:textColor="@color/grey" />
+
+  <TextView
+      android:id="@+id/target_kpi"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/target_kpi_label"
+      android:layout_toLeftOf="@+id/target_plan"
+      android:gravity="top"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/target_kpi_label"
+           android:layout_width="fill_parent"
+           android:layout_height="20dip"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_toLeftOf="@+id/target_fact_label1"
+           android:gravity="bottom"
+           android:text="@string/kpi_full"
+           android:textAppearance="?android:attr/textAppearanceSmall"
+           android:textColor="@color/grey" />
+
+</RelativeLayout>

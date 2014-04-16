@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+   
+ 
+    >
+
+    <TextView
+        android:id="@+id/picture_gallery_comment_item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Выбор времени доставки"
+        android:textSize="30dp"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:showDividers="beginning"
+        android:visibility="visible" >
+
+        <RadioButton
+            android:id="@+id/rbBefore"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onDeliveryTypeChange"
+            android:text="  До"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rbAfter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onDeliveryTypeChange"
+            android:text="  После"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rbBetween"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onDeliveryTypeChange"
+            android:text="  Между"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rbAny"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onDeliveryTypeChange"
+            android:text="  Любое"
+            android:textSize="24dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/picture_gallery_comment_item_author"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="Между"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_horizontal" >
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/picture_gallery_comment_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="и"
+            android:textSize="30dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Small Text"
+        android:visibility="gone" />
+
+</LinearLayout>

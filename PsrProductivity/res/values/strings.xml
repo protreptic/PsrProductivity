@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    
+    <string name="gen_next">далее</string>
+    <string name="app_name">SFS</string>
+    <string name="Previous">Назад</string>
+    <string name="Next">Далее</string>
+    <string name="lbl_shipment_date">Дата отгрузки</string>
+    <string name="lbl_outlet">Торговая точка</string>
+    <string name="Empty">не выбрано</string>
+    <string name="lbl_payment_type">Условия оплаты</string>
+    <string name="lbl_trade_rule">Торговые условия</string>
+    <string name="lbl_contractor">Контрагент</string>
+    <string name="lbl_warehouse">Склад</string>
+    <string name="gen_new">Новый</string>
+    <string name="gen_comment">Примечание</string>
+    <string name="gen_edit">Править</string>
+    <string name="gen_open">Открыть</string>
+    <string name="gen_unit">Единица</string>
+    <string name="gen_erase">Очистить</string>
+    <string name="gen_back">Назад</string>
+    <string name="gen_calculator">Калькулятор</string>
+    <string name="crash_toast_text">Программа остановлена, отчет об ошибке отправлен автоматически</string>
+    <string name="gen_0">0</string>
+    <string name="gen_1">1</string>
+    <string name="example_promo_action_name">Название промо-акции</string>
+    <string name="gen_2">2</string>
+    <string name="gen_3">3</string>
+    <string name="gen_4">4</string>
+    <string name="gen_5">5</string>
+    <string name="gen_6">6</string>
+    <string name="gen_7">7</string>
+    <string name="gen_8">8</string>
+    <string name="gen_9">9</string>
+    <string name="gen_amount">Сумма</string>
+    <string name="gen_close">Закрыть</string>
+    <string name="gen_cancel">Отмена</string>
+
+    <string name="gen_photo">Фото</string>
+    <string name="gen_cases">Коробки</string>
+    <string name="gen_pieces">Штуки</string>
+    
+    <string name="ml_version">SFS.1.72.0</string>
+    <string name="ml_primary_host">mob1.magnat.ru</string>
+    <string name="ml_secondary_host">mob2.magnat.ru</string>
+    <string name="ml_port">2439</string>
+    <string name="ml_pwd">563241</string>
+    
+    <string name="kpi_full">КПР</string>
+    <string name="index">индекс</string>
+    <string name="gap">разница</string>
+    <string name="plan">план</string>
+    <string name="fact">факт</string>
+
+    <string name="weight">вес</string>
+    <string name="app_description">СМП Saleforce Solution</string>
+    <string name="register_application">Перерегистрация</string>
+    <string name="before">до</string>
+    <string name="after">после</string>
+    <string name="between">между</string>
+    <string name="any">любое</string>
+    <string name="property_filter_recommended"> Рекомендованые</string>
+    <string name="property_filter_out_of_stock"> Есть на складе</string>
+ 
+    <string name="menu_settings">Settings</string>
+    
+    <string name="Recommended">Только рекомендованные</string>
+    <string name="instock">Только в наличии на складе</string>
+    <string name="only_list_a">Только лист А</string>
+    <string name="only_list_c">Только лист С</string>
+    <string name="only_priority">Только приоритеты</string>
+    <string name="only_initiative">Только инициативы</string>
+    <string name="waiting_for_photo">Подождите фотография обрабатывается</string>
+    <string name="currency_title">рублей</string>
+    <string name="csku_example_price">9999,00</string>
+    <string name="csku_store_example_info">Информация со склада</string>
+    <string name="csku_short_info">Информация о товаре</string>
+    <string name="csku_name">Наименование товара</string>
+    <string name="csku_example_sellout_or_quote">*</string>
+    <string name="csku_in_stock_image_content_description">Картинка с коробкой</string>
+    <string name="about_button_reinstall_app">Проверить обновление</string>
+    <string name="example_time">00:00</string>
+    <string name="example_outlet_name">Название точки</string>
+    <string name="example_address">Адрес точки</string>
+    <string name="visit_outlet_start_time_label">"Визит начат в "</string>
+    <string name="visit_outlet_end_time_label">" закончен в "</string>
+    <string name="visit_list_empty">Нет визитов</string>
+
+	<string name="calc_button">Расчитать</string>
+	<string name="label_provisional_amount">Предварительная сумма</string>
+    <string name="label_trade_rules">Торговые условия</string>
+    <string name="label_discount">Размер скидки</string>
+    <string name="price_calculator_activity_title">Price calculator</string>
+    <string name="order_amount">Сумма заказа</string>
+    <string name="unknown">Неизвестно</string>
+    <string name="outlet">Торговая точка</string>
+    <string name="outlet_address">Адрес торговой точки</string>
+    <string name="invoice">Реализация</string>
+    <string name="invoice_amount">Сумма реализации</string>
+    <string name="order_cfr">Коэффициент удовлетворенности заказа (Кол. реал. / Кол. заказа)</string>
+    <string name="cfr_value">Урезание (шт)</string>
+    <string name="only_tpr">TPR/Выгода</string>
+    <string name="only_temporary">Нерегулярные товары</string>
+    <string name="only_kits">Наборы</string>
+    
+    <string name="description">[description]</string>
+    <string name="history">[history]</string>
+    <string name="warehouse">[warehouse]</string>
+    <string name="price">[price]</string>
+    <string name="tare">[tare]</string>
+    <string name="order">[order]</string>
+    <string name="cfr">[cfr]</string>
+    <string name="address">[address]</string>
+    <string name="stub">[stub]</string>
+    <string name="shipment_date">[shipment_date]</string>
+    
+    <string name="document_number">[document_number]</string>
+    <string name="action_search">Поиск</string>
+    <string name="action_save">Сохранить</string>
+    <string name="button_settings">Настройки</string>
+
+    <string name="main_activity_menu_action_wipe">Перерегистрация</string>
+    <string name="main_activity_menu_action_check_update">Обновить программу</string>
+    <string name="main_activity_menu_action_user_guide">Руководство пользователя</string>
+    <string name="main_activity_menu_action_unload_data">Выгрузить данные</string>
+    <string name="main_activity_menu_action_settings">Настройки</string>
+    <string name="main_activity_menu_action_about">О программе</string>
+    <string name="main_activity_menu_action_show_sync_journal">Журнал синхронизации</string>
+    <string name="main_activity_menu_action_show_extras">Дополнительные материалы</string>
+    <string name="example_promo_action_type">Тип промо-акции</string>
+    <string name="example_promo_action_amount_of_bonus">45500 р.</string>
+    <string name="example_promo_action_multiplicity">x10</string>
+    
+    <string name="main_order_menu_action_recalc_order">Пересчитать заказ</string>
+    <string name="main_order_menu_action_show_properties">Свойства</string>
+    <string name="main_order_menu_action_show_filters">Фильтры</string>
+    <string name="main_order_menu_action_show_targets">Цели</string>
+    <string name="main_order_menu_action_show_category_filters">Категории</string>
+    <string name="main_order_menu_action_change_unit_type">Единица измерения</string>
+    <string name="example_promo_action_apply_period">Период действия акции</string>
+    <string name="example_promo_action_description">Механика действия акции</string>
+    <string name="example_promo_action_percentage_of_completion">Процент выполнения акции</string>
+    <string name="promo_action_compensation_type_label">Тип компенсации</string>
+    
+    <string name="activity_promo_menu_item_disable_all_actions_label">Отключить все акции</string>
+    
+    
+    <!-- Идентификаторы сохраняемых опций -->
+    <string name="options_order_last_used_trade_rule">order.last_used_trade_rule</string>
+    <string name="options_salary_target_level_of_bonuses">salary.target_level_of_bonuses</string>
+    <string name="options_salary_fixed_part">salary.fixed_part</string>
+    
+    <!-- Sync state messages -->
+    <string name="sync_message_state_starting">Starting</string>
+    <string name="sync_message_state_connecting">Connecting</string>
+    <string name="sync_message_state_commiting_download">Committing download</string>
+    <string name="sync_message_state_disconnecting">Disconnecting</string>
+    <string name="sync_message_state_done">Done</string>
+    <string name="sync_message_state_error">Error</string>
+    <string name="sync_message_state_finishing_upload">Finishing upload</string>
+    <string name="sync_message_state_receiving_data">Receiving data</string>
+    <string name="sync_message_state_receiving_table">Receiving table</string>
+    <string name="sync_message_state_receiving_upload_ack">Receiving upload ack</string>
+    <string name="sync_message_state_rolling_back_download">Rolling back download</string>
+    <string name="sync_message_state_sending_data">Sending data</string>
+    <string name="sync_message_state_sending_download_ack">Sending download ack</string>
+    <string name="sync_message_state_sending_header">Sending header</string>
+    <string name="sync_message_state_sending_table">Sending table</string>
+    <string name="customer_name">[customer_name]</string>
+    <string name="store_address">[store_address]</string>
+    <string name="visit_time">[visit_time]</string>
+    <string name="visit_start_time">[visit_start_time]</string>
+    <string name="visit_end_time">[visit_end_time]</string>
+    <string name="bonus_info">[bonus_info]</string>
+    
+    <!-- App pathes -->
+    <string name="images_path">/download/ru.magnat.sfs/images/</string>
+    <string name="outbox_path">/download/ru.magnat.sfs/outbox/</string>
+    
+    <!-- App labels -->
+    <string name="label_comments">Comments</string>
+    
+    <!-- Formats -->
+    <string name="date_format">yyyy-dd-MM</string>
+    <string name="simple_date_format">ddMMyyyy-HHmmss</string>
+    <string name="recommended_price">[recommended price]</string>
+    <string name="stub_promotion_pricing">-20%</string>
+    <string name="ordered_amount">[ordered_amount]</string>
+    <string name="amount">[amount]</string>
+    <string name="message_error">Критическая ошибка</string>
+    <string name="no_data">Нет данных</string>
+</resources>

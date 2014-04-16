@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/caption_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
+        android:layout_toLeftOf="@+id/controls"
+        android:background="@color/selected_caption"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/not_selected_caption" />
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:background="@color/selected_caption"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/date_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dip"
+            android:text="Button" />
+
+        <ImageButton
+            android:id="@+id/caption_action"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="20dip"
+            android:background="@null"
+            android:contentDescription="@string/gen_open"
+            android:src="@drawable/content_new"
+            android:visibility="gone"
+            android:color="@color/selected_caption" />
+
+    </LinearLayout>
+
+</RelativeLayout>

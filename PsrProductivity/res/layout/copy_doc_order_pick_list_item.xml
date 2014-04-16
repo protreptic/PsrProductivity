@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dip"
+    android:paddingLeft="1dip"
+    android:background="@android:color/transparent" >
+
+        <TextView
+            android:id="@+id/pick_list_abc"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentLeft="true" 
+            android:layout_alignParentTop="true"
+           />
+        <TextView
+            android:id="@+id/pick_list_gcas"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/pick_list_abc"
+            android:layout_alignParentLeft="true"   />
+        <TextView
+            android:id="@+id/pick_list_shortname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/pick_list_abc" 
+            android:layout_toLeftOf="@+id/pick_list_order" 
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:background="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/pick_list_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:layout_toRightOf="@+id/pick_list_abc" 
+            android:layout_toLeftOf="@+id/pick_list_order"
+            android:layout_below="@+id/pick_list_shortname"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip" />
+
+        <LinearLayout
+            android:id="@+id/pick_list_sales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pick_list_fullname"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip"
+            android:layout_toLeftOf="@+id/pick_list_order"
+            android:layout_toRightOf="@+id/pick_list_abc"
+            android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pick_list_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+        <TextView
+            android:id="@+id/pick_list_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/pick_list_order"
+            android:layout_width="95dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/blue"
+           
+            />
+		 <TextView
+            android:id="@+id/pick_list_unit_factor"
+            android:layout_width="95dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pick_list_order"
+            />
+        <TextView
+            android:id="@+id/pick_list_price"
+            android:layout_width="95dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignParentRight="true" 
+            android:layout_below="@+id/pick_list_unit_factor" />
+</RelativeLayout>

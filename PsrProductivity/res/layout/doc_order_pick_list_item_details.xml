@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/control_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            android:contentDescription="@string/gen_back"
+            android:src="@drawable/navigation_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/caption"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            android:textColor="@color/not_selected_caption" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCancel"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@null"
+            android:contentDescription="@string/gen_cancel"
+            android:src="@drawable/content_remove"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/control_bar"
+        android:background="@android:color/background_light"
+        android:choiceMode="singleChoice"
+        android:descendantFocusability="afterDescendants"
+        android:listSelector="@drawable/list_selector" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/priceinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left" >
+
+            <TextView
+                android:id="@+id/priceinfotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Цена по базе 100.00р, Цена со скидкой 90.52, Скидка 5.2%"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/primary_text_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center_vertical|right" >
+
+            <ImageView
+                android:id="@+id/calc_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:src="@drawable/calculator" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

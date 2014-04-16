@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/caption_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="left"
+        android:background="@color/selected_caption"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/not_selected_caption" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/refresh_button"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/list_selector"
+            android:contentDescription="@string/gen_open"
+            android:src="@drawable/navigation_refresh"
+            android:visibility="gone"
+            android:color="@color/selected_caption" />
+
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/list_selector"
+            android:contentDescription="@string/gen_open"
+            android:src="@drawable/content_new"
+            android:visibility="gone"
+            android:color="@color/selected_caption" />
+
+        <ImageButton
+            android:id="@+id/filter_action"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/list_selector"
+            android:contentDescription="@string/gen_open"
+            android:src="@drawable/filter_filled_holo_dark"
+            android:visibility="gone"
+            android:color="@color/selected_caption" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    
+    android:layout_height="?android:attr/actionBarSize"   
+    android:layout_weight="1"
+    android:layout_marginLeft="-3dip"
+    android:layout_marginRight="-3dip"
+    android:orientation="vertical"
+ 	android:background="@drawable/tab_indicator_holo"
+   
+    style="@style/SfsHoloTabWidget" 
+    >
+<!--android:layout_height="64dip"-->
+    <ImageView android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+    />
+
+    <TextView android:id="@+id/title"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+     	style="@style/SfsHoloTabText"
+     
+    />
+
+</RelativeLayout>

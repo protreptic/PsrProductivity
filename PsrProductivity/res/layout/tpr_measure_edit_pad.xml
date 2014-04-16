@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <CheckBox
+        android:id="@+id/tpr_measure_edit_pad_price_label_presented"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Ценник размещен" />
+
+    <Button
+        android:id="@+id/tpr_measure_edit_pad_save"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tpr_measure_edit_pad_price_reduced"
+        android:text="Сохранить" />
+
+    <CheckBox
+        android:id="@+id/tpr_measure_edit_pad_price_reduced"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@+id/tpr_measure_edit_pad_price_label_presented"
+        android:layout_alignBottom="@+id/tpr_measure_edit_pad_price_label_presented"
+        android:layout_alignRight="@+id/tpr_measure_edit_pad_save"
+        android:text="Цена снижена" />
+
+</RelativeLayout>

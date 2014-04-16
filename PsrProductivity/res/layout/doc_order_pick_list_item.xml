@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dip"
+    android:paddingLeft="1dip"
+    android:background="@drawable/listitem_background"
+    >
+
+        <TextView
+            android:id="@+id/pick_list_abc"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentLeft="true" 
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+           />
+        <TextView
+            android:id="@+id/pick_list_gcas"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/pick_list_abc"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:background="@android:color/transparent"   />
+
+        <TextView
+            android:id="@+id/pick_list_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:layout_toRightOf="@+id/pick_list_abc"
+            android:background="@color/yellow"
+            android:text="new"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/pick_list_shortname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/pick_list_new" 
+            android:layout_toLeftOf="@+id/pick_list_order" 
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:background="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/pick_list_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:layout_toRightOf="@+id/pick_list_abc" 
+            android:layout_toLeftOf="@+id/pick_list_order"
+            android:layout_below="@+id/pick_list_shortname"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip"
+            android:visibility="gone"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:id="@+id/pick_list_sales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pick_list_fullname"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip"
+            android:layout_toLeftOf="@+id/pick_list_order"
+            android:layout_toRightOf="@+id/pick_list_abc"
+            android:orientation="horizontal" 
+            android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/pick_list_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/pick_list_turnover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/pick_list_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/pick_list_unit_factor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@android:color/transparent" 
+          />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/pick_list_order"
+            android:layout_width="95dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/blue"
+            android:background="@android:color/transparent"
+           
+            />
+		 <TextView
+            android:id="@+id/pick_list_unit_factor_invisible"
+            android:layout_width="95dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pick_list_order"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/pick_list_price"
+            android:layout_width="95dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignParentRight="true" 
+            android:layout_below="@+id/pick_list_order"
+            android:background="@android:color/transparent" />
+</RelativeLayout>

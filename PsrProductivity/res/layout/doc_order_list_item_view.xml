@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dip"
+    android:paddingLeft="1dip"
+    android:background="@android:color/transparent" >
+
+        <TextView
+            android:id="@+id/doc_state"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentLeft="true" 
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+           />
+      <LinearLayout android:id="@+id/doc_descr_block"
+            android:orientation="horizontal" 
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/doc_state" 
+            android:layout_toLeftOf="@+id/doc_date"  
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="left">
+        <TextView
+            android:id="@+id/doc_descr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+           android:text="Номер"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:background="@android:color/transparent"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="right">
+        <TextView
+            android:id="@+id/doc_cfr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip" 
+            android:text="90%"
+            android:background="@android:color/transparent"/>
+        </LinearLayout>
+       </LinearLayout> 
+       
+        <TextView
+            android:id="@+id/doc_info"
+            android:layout_toRightOf="@+id/doc_state" 
+            android:layout_toLeftOf="@+id/doc_date"
+            android:layout_below="@+id/doc_descr_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip" 
+            android:text="Инфо"
+            android:background="@android:color/transparent"/>
+       
+        <TextView
+            android:id="@+id/doc_date"
+            android:layout_width="95dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+           android:background="@android:color/transparent"
+           
+            />
+		 <TextView
+            android:id="@+id/doc_totals"
+            android:layout_width="95dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/doc_date"
+            android:background="@android:color/transparent"
+            />
+       
+</RelativeLayout>

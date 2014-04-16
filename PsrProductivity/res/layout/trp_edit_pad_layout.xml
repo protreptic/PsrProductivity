@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <CheckedTextView
+        android:id="@+id/tpr_edit_pad_price_reduced"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Цена снижена"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <CheckedTextView
+        android:id="@+id/tpr_edit_pad_price_label_presented"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/tpr_edit_pad_price_reduced"
+        android:layout_alignRight="@+id/tpr_edit_pad_price_reduced"
+        android:layout_below="@+id/tpr_edit_pad_price_reduced"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Ценник размещен"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+</RelativeLayout>

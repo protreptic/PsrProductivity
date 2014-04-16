@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:layout_margin="1dip"
+    android:paddingLeft="1dip"
+    android:background="@android:color/transparent" >
+
+     <TextView
+        android:id="@+id/salary_forecast"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+       
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/salary_value"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_toLeftOf="@+id/salary_forecast"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+       
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/salary_index"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/salary_value"
+         android:gravity="bottom"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/salary_weight"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/salary_index"
+         android:gravity="bottom"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+      <TextView
+        android:id="@+id/salary_kpi"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/salary_weight"
+         android:gravity="bottom"
+        android:textAppearance="?android:attr/textAppearanceMedium" />     
+        
+     <TextView
+         android:id="@+id/salary_forecast_label"
+         android:layout_width="80dip"
+         android:layout_height="20dip"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/salary_forecast"
+         android:gravity="top"
+         android:text="прогноз"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textColor="@color/grey" />
+     <TextView
+         android:id="@+id/salary_value_label"
+         android:layout_width="80dip"
+         android:layout_height="20dip"
+         android:layout_toLeftOf="@+id/salary_forecast_label"
+         android:layout_below="@+id/salary_value"
+         android:gravity="top"
+         android:text="с уч. веса"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textColor="@color/grey" />
+     <TextView
+        android:id="@+id/salary_index_label"
+        android:layout_width="80dip"
+        android:layout_height="20dip"
+        android:layout_below="@+id/salary_index"
+        android:layout_toLeftOf="@+id/salary_value"
+        android:gravity="top"
+        android:text="% вып."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+    <TextView
+        android:id="@+id/salary_weight_label"
+        android:layout_width="80dip"
+        android:layout_height="20dip"
+        android:layout_below="@+id/salary_weight"
+        android:layout_toLeftOf="@+id/salary_index"
+        android:gravity="top"
+        android:text="Вес, %"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+      <TextView
+          android:id="@+id/salary_kpi_label"
+          android:layout_width="fill_parent"
+          android:layout_height="20dip"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/salary_kpi"
+          android:layout_toLeftOf="@+id/salary_weight"
+          android:gravity="top"
+          android:text="@string/kpi_full"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textColor="@color/grey" />
+     
+</RelativeLayout>

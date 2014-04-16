@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.magnat.sfs.android"
+    android:largeHeap="true"
+    android:sharedUserLabel="@string/app_name"
+    android:versionCode="1"
+    android:versionName="1.73" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="ru.magnat.sfs.android.SalesForceSolution"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:description="@string/application_description"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/more_sales_icon_red"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.Holo.Sfs" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <!-- <activity
+            android:name="ru.magnat.sfs.android.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity> -->
+        <activity
+            android:name="ru.magnat.sfs.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ru.magnat.sfs.camera.SfsCameraActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="ru.magnat.sfs.ui.android.extras.SfsExtrasActivity"
+            android:exported="false"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="ru.magnat.sfs.ui.android.extras.SfsExtrasFilesActivity"
+            android:exported="false"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="ru.magnat.sfs.ui.android.task.workday.SfsTrackActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="ru.magnat.sfs.camera.SfsPhotoViewActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="ru.magnat.sfs.camera.SfsPhotoViewActivity2"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="ru.magnat.sfs.ui.android.task.visit.StoreInformationChangeRequestActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name="ru.magnat.sfs.preference.SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_activity_title"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name="ru.magnat.sfs.ui.android.doc.order.PriceCalculatorActivity"
+            android:exported="false"
+            android:label="@string/price_calculator_activity_title"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name="ru.magnat.sfs.camera.PhotoGalleryActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name="ru.magnat.sfs.promo.PromoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

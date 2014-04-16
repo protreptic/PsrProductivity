@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="false"
+    android:longClickable="false" >
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/numeric_pad"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                style="@android:style/Theme.Light"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+           
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@android:id/tabs"
+                android:padding="2dp" />
+            
+             <LinearLayout
+                android:id="@+id/tools_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@android:id/tabs"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="16dp"
+                android:gravity="right" >
+
+                <ToggleButton
+                    android:id="@+id/change_unit_button"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="-11dp"
+                    android:contentDescription="@string/gen_unit"
+                    android:textOff="@string/gen_pieces"
+                    android:textOn="@string/gen_cases" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </TabHost>
+
+  
+
+    <ru.magnat.sfs.ui.android.controls.NumericPadLayout
+        android:id="@+id/numeric_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/status_panel" />
+
+    <LinearLayout
+        android:id="@+id/status_panel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/magnat_color"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

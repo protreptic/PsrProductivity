@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:gravity="center_horizontal|center_vertical"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totals"
+        android:layout_alignRight="@+id/totals"
+        android:layout_below="@+id/totals"
+        android:gravity="right"
+        android:text="общий бонус"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/selected_caption"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/amount1"
+        android:layout_alignRight="@+id/amount1"
+        android:layout_below="@+id/amount1"
+        android:gravity="right"
+        android:text="снижение цены"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/selected_caption"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/amount2"
+        android:layout_below="@+id/amount2"
+        android:gravity="right"
+        android:text="купи и получи"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/selected_caption"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Итоговый отчет по промо-акциям"
+        android:textColor="@color/selected_caption1"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/totals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:gravity="right"
+        android:minWidth="100dp"
+        android:text="[data]"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/gold"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/amount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/amount1"
+        android:gravity="right"
+        android:minWidth="110dp"
+        android:text="[data]"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/gold"
+        android:textSize="26sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/amount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/totals"
+        android:gravity="right"
+        android:minWidth="115dp"
+        android:text="[data]"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/gold"
+        android:textSize="26sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

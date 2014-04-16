@@ -1,0 +1,246 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+  <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+       > <TextView
+            android:id="@+id/textLabelShipmentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/lbl_shipment_date"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/textLabelOutlet"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/textLabelShipmentDate"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/lbl_outlet"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <TextView
+            android:id="@+id/textLabelContractor"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textLabelOutlet"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/lbl_contractor"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+       <TextView
+            android:id="@+id/textLabelWarehouse"
+            android:layout_width="wrap_content"
+             android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textLabelContractor"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/lbl_warehouse"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+
+        <TextView
+            android:id="@+id/textLabelPaymentType"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/lbl_payment_type"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_below="@+id/textLabelWarehouse"/>
+ <TextView
+            android:id="@+id/textLabelTradeRule"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/lbl_trade_rule"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_below="@+id/textLabelPaymentType"/>
+        <TextView
+            android:id="@+id/textLabelAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/gen_amount"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_below="@+id/textLabelTradeRule"/>
+         <TextView
+            android:id="@+id/textLabelComment"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/gen_comment"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_below="@+id/textLabelAmount"/>
+        
+        <TextView
+            android:id="@+id/edit_shipment_date"
+            android:layout_width="320dip"
+            android:layout_height="40dip"
+            android:background="@drawable/edittext_bg"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textLabelTradeRule"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/Empty"
+            android:textAppearance="@style/EditableTextViewStyle" />
+
+        <TextView
+            android:id="@+id/edit_outlet"
+            android:layout_width="320dip"
+            android:layout_height="40dip"
+            android:background="@drawable/edittext_bg"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/edit_shipment_date"
+            android:layout_toRightOf="@+id/textLabelTradeRule"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/Empty"
+            android:textAppearance="@style/EditableTextViewStyle" />
+
+        <TextView
+            android:id="@+id/edit_contractor"
+            android:layout_width="320dip"
+            android:layout_height="40dip"
+            android:background="@drawable/edittext_bg"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/edit_outlet"
+			android:layout_toRightOf="@+id/textLabelTradeRule"
+			android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/Empty"
+            android:textAppearance="@style/EditableTextViewStyle" />
+
+        <TextView
+            android:id="@+id/edit_warehouse"
+            android:layout_width="320dip"
+            android:layout_height="40dip"
+            android:background="@drawable/edittext_bg"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/edit_contractor"
+            android:text="@string/Empty"
+            android:layout_toRightOf="@+id/textLabelTradeRule"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:textAppearance="@style/EditableTextViewStyle" />
+
+        <TextView
+            android:id="@+id/edit_payment_type"
+            android:layout_width="320dip"
+            android:layout_height="40dip"
+            android:background="@drawable/edittext_bg"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/edit_warehouse"
+            android:layout_toRightOf="@+id/textLabelTradeRule"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/Empty"
+            android:textAppearance="@style/EditableTextViewStyle" />
+           <TextView
+            android:id="@+id/edit_trade_rule"
+            android:layout_width="320dip"
+            android:layout_height="40dip"
+            android:background="@drawable/edittext_bg"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/edit_payment_type"
+            android:layout_toRightOf="@+id/textLabelTradeRule"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/Empty"
+            android:textAppearance="@style/EditableTextViewStyle" />
+        <TextView
+            android:id="@+id/edit_amount"
+            android:layout_width="320dip"
+            android:layout_height="40dip"
+            android:background="@drawable/edittext_bg"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/edit_trade_rule"
+            android:layout_toRightOf="@+id/textLabelTradeRule"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@android:string/unknownName"
+            android:textAppearance="@style/EditableTextViewStyle" />
+
+        <EditText
+            android:id="@+id/edit_comment"
+            android:layout_width="320dip"
+            android:layout_height="120dip"
+            android:background="@drawable/edittext_bg"
+          
+            android:layout_below="@+id/edit_amount"
+            android:layout_toRightOf="@+id/textLabelTradeRule"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:text="@android:string/unknownName"
+            android:textAppearance="@style/EditableTextViewStyle" 
+            android:ems="10"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+        
+<Button
+            android:id="@+id/button_exit_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/gen_close" />
+        
+    </RelativeLayout>
+
+</merge>

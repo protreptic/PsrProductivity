@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="35dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/summary_product_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/summary_product_item_amount"
+        android:text="TextView"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/summary_product_item_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/summary_product_item_description"
+        android:text="TextView"
+        android:textColor="@color/blue"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/summary_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/summary_product_item_description"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Оплата труда" >
+        <EditTextPreference
+            android:key="@string/options_salary_fixed_part"
+            android:summary="Установить размер фиксированной части"
+            android:title="Фиксированная часть"
+            android:defaultValue="0" />
+        <EditTextPreference
+            android:key="@string/options_salary_target_level_of_bonuses"
+            android:summary="Установить размер премиальной части"
+            android:title="Премиальная часть"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

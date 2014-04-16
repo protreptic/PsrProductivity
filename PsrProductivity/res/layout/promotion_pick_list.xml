@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/promo_action_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/example_promo_action_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/selected_caption1"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/promo_action_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/promo_action_type"
+        android:layout_below="@+id/promo_action_type"
+        android:layout_marginTop="10dp"
+        android:text="@string/example_promo_action_type"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/promo_action_apply_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/promo_action_description"
+        android:layout_alignRight="@+id/change_multiplicity"
+        android:layout_below="@+id/promo_action_description"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="15dp"
+        android:text="@string/example_promo_action_apply_period"
+        android:textColor="@color/selected_caption1"
+        android:textSize="14sp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/promo_action_percentage_of_completion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/promo_action_promo_list_item"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/promo_action_description"
+        android:gravity="right"
+        android:text="@string/example_promo_action_percentage_of_completion"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/red"
+        android:textSize="26sp"
+        android:visibility="gone" />
+ 
+    <ExpandableListView
+        android:id="@+id/promo_action_promo_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_above="@+id/bonus_info"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/change_multiplicity"
+        android:choiceMode="singleChoice" >
+
+    </ExpandableListView>
+
+    <ru.magnat.sfs.ui.android.controls.NumericPadLayout
+        android:id="@+id/num_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/promo_action_promo_list_item"
+        android:layout_alignParentBottom="true" >
+    </ru.magnat.sfs.ui.android.controls.NumericPadLayout>
+
+    <ProgressBar
+        android:id="@+id/promo_action_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/change_multiplicity"
+        android:layout_toLeftOf="@+id/change_multiplicity"
+        android:max="100"
+        android:progress="45"
+        android:progressDrawable="@drawable/progress_bar_primary_red"
+        android:visibility="visible" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/promo_action_apply_date"
+        android:layout_below="@+id/promo_action_apply_date"
+        android:textOff="Монетарный"
+        android:textOn="Товарный" />
+
+    <Button
+        android:id="@+id/change_multiplicity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/promo_action_promo_list_item"
+        android:layout_below="@+id/promo_action_apply_date" />
+
+    <TextView
+        android:id="@+id/bonus_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/num_pad"
+        android:layout_alignLeft="@+id/num_pad"
+        android:layout_alignRight="@+id/num_pad"
+        android:padding="5dp"
+        android:text="@string/bonus_info"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <gradient
+        android:angle="270"
+        android:centerX="0.97"
+        android:centerY="0.1"
+        android:centerColor="@color/magnat_color"
+        android:endColor="@color/selected_caption1"
+        android:startColor="@color/magnat_color" />
+
+</shape>

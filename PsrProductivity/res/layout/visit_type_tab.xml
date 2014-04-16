@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/tab_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        layout="@layout/tab_with_action_in_header" />
+
+    <TextView
+        android:id="@+id/typeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab_header"
+        android:text="Тип визита"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/typeSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typeLabel"
+        android:layout_marginLeft="10dip" >
+
+        <RadioButton
+            android:id="@+id/radioOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Заказ"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioButton
+            android:id="@+id/radioFinance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Финансовые вопросы"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioButton
+            android:id="@+id/radioDocuments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Работа с документами"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioButton
+            android:id="@+id/radioShelving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Работа с полкой"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typeSelector"
+        android:layout_marginTop="10dip"
+        android:text="Результат визита"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/resultSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultLabel"
+        android:layout_marginLeft="10dip" >
+
+        <RadioButton
+            android:id="@+id/radioResultative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Цели визита выполнены"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioButton
+            android:id="@+id/radioNonResultative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цели визита не выполнены"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/commentLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultSelector"
+        android:layout_marginTop="10dip"
+        android:text="Комментарий к визиту" />
+
+    <EditText
+        android:id="@+id/editComment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/resultSelector"
+        android:layout_below="@+id/commentLabel"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:inputType="textImeMultiLine|textMultiLine"
+        android:text="EditText"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

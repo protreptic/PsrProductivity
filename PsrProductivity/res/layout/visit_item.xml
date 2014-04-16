@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="48dp"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/visit_outlet_golden_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/csku_in_stock_image_content_description"
+        android:padding="3dp"
+        android:src="@drawable/cup_gold" />
+
+    <TextView
+        android:id="@+id/visit_outlet_legal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/visit_outlet_golden_mark"
+        android:layout_alignTop="@+id/visit_outlet_golden_mark"
+        android:layout_toRightOf="@+id/visit_outlet_golden_mark"
+        android:text="@string/customer_name"
+        android:textColor="@color/selected_caption1"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/visit_outlet_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/visit_outlet_legal_name"
+        android:layout_below="@+id/visit_outlet_legal_name"
+        android:text="@string/store_address"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/visit_start_time_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/visit_outlet_legal_name"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/visit_time"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/grey"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/visit_is_not_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/visit_outlet_address"
+        android:layout_below="@+id/visit_outlet_address" >
+
+        <ImageView
+            android:id="@+id/visit_outlet_compleeted_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/csku_in_stock_image_content_description"
+            android:src="@drawable/accepted" />
+
+        <TextView
+            android:id="@+id/picture_gallery_comment_item_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visit_outlet_start_time_label"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/selected_caption1" />
+
+        <TextView
+            android:id="@+id/visit_outlet_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/visit_start_time"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/picture_gallery_comment_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visit_outlet_end_time_label"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/selected_caption1" />
+
+        <TextView
+            android:id="@+id/visit_outlet_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/visit_end_time"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/grey" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/visit_outlet_address"
+        android:layout_alignTop="@+id/visit_outlet_legal_name"
+        android:layout_toRightOf="@+id/visit_outlet_legal_name"
+        android:contentDescription="@string/stub"
+        android:src="@drawable/ic_menu_moreoverflow_normal_holo_light" />
+
+</RelativeLayout>

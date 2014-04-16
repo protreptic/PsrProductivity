@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_request_on_change_store_info">Запрос на изменение сведений о магазине</string>
+    <string name="subtitle_request_on_change_store_info">Запрос №</string>
+    <string name="title_label_store_legal_name">Наименование</string>
+    <string name="title_label_address">Адрес</string>
+    <string name="title_label_store_channel">Канал продаж</string>
+    <string name="title_label_store_service_type">Тип обслуживания</string>
+    <string name="title_label_store_type">Тип магазина</string>
+    <string name="title_checkBox_head_office">Центральный офис</string>
+    <string name="title_checkBox_distribution_center">Распределительный центр</string>
+    <string name="title_checkBox_store">Магазин</string>
+    <string name="title_checkBox_point_of_order_taking">Точка взятия заказа</string>
+    <string name="title_checkBox_wellcome_offer_separate_payment_discount">WellcomeOffer скидка отдельным платежом</string>
+    <string name="title_checkBox_golden_offer_separate_payment_discount">Золотая скидка отдельным платежом</string>
+    <string name="title_checkBox_inactive">Неактивный</string>
+    <string name="button_title_create">Создать запрос</string>
+    <string name="button_title_cancel">Отменить</string>
+    <string name="title_discount_calculator_activity">Калькулятор \"Предварительная сумма\"</string>
+    <string name="label_provisional_amount">Предварительная сумма</string>
+    <string name="label_trade_rules">Торговые условия</string>
+    <string name="calc_button">Расчитать</string>
+    <string name="label_discount">Размер скидки</string>
+    <string name="label_volume_discount">Скидка за объем</string>
+    <string name="label_golden_discount">\&quot;Золотая скидка\&quot;</string>
+    <string name="settings_activity_title">Настройки</string>
+    <string name="final_amount">Итоговая сумма со скидкой</string>
+    <string name="credit_type_label">Тип кредита</string>
+    <string name="price_calculator_activity_title">Калькулятор цен</string>
+    <string name="application_description">Система мобильных продаж &#171;Sales force solution&#187;, &#169; 2013 M&#38;T</string>
+    <string name="data_loading">Загрузка данных</string>
+    <string name="backup_database">Создание резервной копии...</string>
+    
+    <!-- Единицы измерения -->
+    <string name="unit_pcs_short">шт.</string>
+    <string name="unit_box_short">кор.</string>
+    <string name="unit_block_short">бл.</string>
+    <string name="unit_pcs_full">штука</string>
+    <string name="unit_box_full">коробка</string>
+    <string name="unit_block_full">блок</string>
+
+    <!-- Сообщения диалогов -->
+    <string name="dialog_exit">Выйти из программы?</string>
+    <string name="dialog_confirmation_message">Создать запрос на изменение сведений о точке?</string>
+    <string name="dialog_confirmation_title">Подтвердите создание запроса</string>
+    <string name="dialog_promotion_activation">Активировать акцию?</string>
+    <string name="dialog_exit_by_timer">Активность пользователя не обнаружена. Программа будет закрыта через 10 секунд.</string>
+    <string name="dialog_internet_unavailable">Сеть Интернет недоступна! Обмен невозможен!</string>
+    <string name="dialog_wipe">Будут произведено удаление данных и выход из программы. Продолжить?</string>
+    <string name="dialog_sync_server_unavailable">Cервер синхронизации недоступен</string>
+    <string name="dialog_sync_user_undefined">Пользователь не определен</string>
+    <string name="dialog_sync_error">В процессе инициализации устройства произошла ошибка, данные не были загружены. Зайдите в настройки и очистите данные приложения.</string>
+    <string name="dialog_camera_restriction">Делайте не более 4 фотографий</string>
+    <string name="dialog_camera_delete">Удалить фото?</string>
+    <string name="dialog_visit_save_error">Не удалось записать созданный визит</string>
+    <string name="dialog_visit_store_count">Количество торговых точек: </string>
+    <string name="dialog_visit_store_add">Добавить в маршрут внеплановый визит в точку </string>
+    <string name="dialog_sync_success">Успешно выполненно</string>
+    <string name="dialog_sync_fail">Не выполненно</string>
+    <string name="dialog_location_manager_unavailable">GPS недоступен</string>
+	<string name="dialog_disk_space_unavailable">Не достаточно места на диске для загрузки требуемых данных.\nОчистите данные и запустите программу еще раз.</string>
+    <string name="dialog_order_check_proirities">Вы не продали все доступные приоритетные CSKU. Закрыть заказ?</string>
+	<string name="dialog_order_check_proirities_msg">Проверка приоритетов.\nПожалуйста, подождите.</string>
+	<string name="dialog_order_check_trade_rules_msg">Кредитный контроль.\nПожалуйста, подождите.</string>
+	<string name="dialog_order_visit_undefined">Ошибка! Визит для заказа не определен</string>
+	<string name="dialog_order_order_recounting_msg">Перерасчет заказа</string>
+	<string name="dialog_order_target_recounting_msg">Расчет выполнения целей</string>
+	<string name="dialog_order_check_order_property">Проверка свойств заказа</string>
+	<string name="dialog_order_filter_unavailable">Для текущей закладки фильтры не доступны</string>
+	<string name="dialog_order_initialization">Инициализация</string>
+	<string name="dialog_order_order_open_violaion">Данный заказ редактировать запрещено. Так как он уже был отправлен на сервер!</string>
+	<string name="dialog_order_targets">Цели визита</string>
+	<string name="dialog_gps_violation">Внимание! GPS на данном устройстве недоступен, обратитесь в поддержку. Вашему менеджеру будет отправлено сообщение!</string>
+	
+    <!-- AboutListView Fragment -->
+    <string name="about_unknown_label">Неизвестен</string>
+    <string name="about_hotline_label">Круглосуточная горячая линия</string>
+    <string name="about_hotline_number">88001004234</string>
+    <string name="about_version_label">Версия</string>
+    <string name="about_user_label">Пользователь</string>
+    <string name="about_id_label">Идентификатор</string>
+    <string name="about_agent_label">Агент</string>
+    <string name="about_business_label">Направление бизнеса</string>
+    <string name="about_imei_label">IMEI</string>
+
+    <!-- Promo 2.0 -->
+	<string name="conditions_of_promotion_are_not_reached">Условия акции не выполнены</string> 
+
+    <!-- Кнопки диалогов -->
+    <string name="btn_exit">Выйти</string>
+    <string name="btn_yes">Да</string>
+    <string name="btn_no">Нет</string>
+    <string name="btn_cancel">Отменить</string>
+    <string name="btn_continue">Продолжить</string>
+    <string name="btn_repeat">Повторить</string>
+    <string name="btn_activate">Включить</string>
+    <string name="btn_na">Н/Д</string>
+    
+    <!-- Документ заказ -->
+    <string name="order_tab_initiatives">Инициативы</string>
+    <string name="order_tab_power">Power</string>
+    <string name="order_tab_refill">Пополнение</string>
+    <string name="order_tab_other">Прочие</string>
+    <string name="order_tab_siblings">Смежные</string>
+    <string name="order_tab_order">Заказ</string>
+    
+    <!-- Сообщения синхронизации -->
+    <string name="sync_message_state_starting">Запуск</string>
+    <string name="sync_message_state_connecting">Соединение</string>
+    <string name="sync_message_state_commiting_download">Приминение изменений</string>
+    <string name="sync_message_state_disconnecting">Отключение</string>
+    <string name="sync_message_state_done">Завершено</string>
+    <string name="sync_message_state_error">Ошибка</string>
+    <string name="sync_message_state_finishing_upload">Завершение отправки</string>
+    <string name="sync_message_state_receiving_data">Получение данных</string>
+    <string name="sync_message_state_receiving_table">Получение данных</string>
+    <string name="sync_message_state_receiving_upload_ack">Подготовка данных</string>
+    <string name="sync_message_state_rolling_back_download">Отмена изменений</string>
+    <string name="sync_message_state_sending_data">Отправка данных</string>
+    <string name="sync_message_state_sending_download_ack">Ожидание получения данных</string>
+    <string name="sync_message_state_sending_header">Отправка данных</string>
+    <string name="sync_message_state_sending_table">Отправка данных</string>
+
+    <!-- App labels -->
+    <string name="label_comments">Комментарии</string>
+
+    <!-- Formats -->
+    <string name="date_format">dd.MM.yyyy</string>
+
+</resources>

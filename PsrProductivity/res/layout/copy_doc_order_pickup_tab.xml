@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/filter_by_group_list"
+        android:layout_width="match_parent"
+        android:layout_height="95dip"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/change_unit_button"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:background="@null" >
+
+    </Button>
+
+    <ToggleButton
+        android:id="@+id/change_unit_button"
+        android:layout_width="95dip"
+        android:layout_height="95dip"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/gen_unit"
+        android:textOff="@string/gen_pieces"
+        android:textOn="@string/gen_cases" />
+     
+    <ListView
+        android:id="@+id/pick_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/list_selector"
+        android:layout_above="@+id/numeric_pad"
+        android:layout_below="@+id/filter_by_group_list" >
+    </ListView>
+ <ru.magnat.sfs.ui.android.controls.NumericPadLayout
+        android:id="@+id/numeric_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        
+       
+        />
+  
+
+    
+
+</RelativeLayout>

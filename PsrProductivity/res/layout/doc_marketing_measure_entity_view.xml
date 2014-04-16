@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/measureCaption"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_gravity="left"
+        android:layout_margin="3dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/selected_caption"
+        android:textColor="@color/not_selected_caption"
+        android:textSize="48dip" />
+
+    <RelativeLayout
+        android:id="@+id/inputControlView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:layout_alignParentLeft="true"/>
+
+    <ListView
+        android:id="@+id/tpr_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inputControlView"
+        android:layout_below="@+id/measureCaption"
+        android:listSelector="@drawable/list_selector" 
+        android:layout_alignParentLeft="true" 
+        >
+    </ListView>
+    <ImageButton
+        android:id="@+id/button_photo"
+        android:layout_width="99dip"
+        android:layout_height="99dip"
+ 		android:layout_alignParentBottom="true"     
+        android:text="@string/gen_6"
+        android:contentDescription="@string/gen_photo"
+        android:src="@drawable/device_access_camera"
+        android:layout_alignParentRight="true"
+    />
+    
+
+</RelativeLayout>

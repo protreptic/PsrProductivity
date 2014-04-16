@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="35dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+    
+      <TextView
+          android:id="@+id/customer_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:text="@string/customer_name"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="@color/selected_caption1"
+          android:textSize="26sp" />
+
+      <TextView
+          android:id="@+id/balance_debtor_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/customer_name"
+          android:layout_below="@+id/customer_name"
+          android:text="контрагент"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textColor="@color/grey" />
+
+      <TextView
+          android:id="@+id/amount_take"
+          android:layout_width="160dp"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/balance_debtor_label"
+          android:layout_toRightOf="@+id/balance_debtor_label"
+          android:gravity="right"
+          android:text="@string/amount"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="@color/blue" />
+
+      <TextView
+          android:id="@+id/amount_debt"
+          android:layout_width="160dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/customer_name"
+          android:layout_toRightOf="@+id/amount_take"
+          android:gravity="right"
+          android:text="@string/amount"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <TextView
+          android:id="@+id/amount_delayed"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/amount_debt"
+          android:layout_alignBottom="@+id/amount_debt"
+          android:layout_alignParentRight="true"
+          android:gravity="right"
+          android:text="@string/amount"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="@color/red" />
+
+      <TextView
+          android:id="@+id/balance_delayed_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@+id/amount_delayed"
+          android:layout_below="@+id/amount_delayed"
+          android:gravity="right"
+          android:text="просрочка"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textColor="@color/grey" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/balance_delayed_label"
+          android:layout_alignBottom="@+id/balance_delayed_label"
+          android:layout_alignRight="@+id/amount_debt"
+          android:gravity="right"
+          android:text="долг"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textColor="@color/grey" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@+id/amount_take"
+          android:layout_below="@+id/amount_take"
+          android:gravity="right"
+          android:text="забрать"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textColor="@color/grey" />
+     
+</RelativeLayout>

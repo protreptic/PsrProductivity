@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/checkBoxRecommended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Recommended"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxInStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instock"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOnlyListA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/only_list_a"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOnlyListC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/only_list_c"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOnlyPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/only_priority"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOnlyInitiative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/only_initiative"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOnlyTpr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/only_tpr"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOnlyTemporary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/only_temporary"
+        android:visibility="gone" />
+    
+    <CheckBox
+        android:id="@+id/checkBoxOnlyKits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/only_kits"
+        android:visibility="gone" />
+</LinearLayout>

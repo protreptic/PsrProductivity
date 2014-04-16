@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+    
+    <TextView
+        android:id="@+id/promo_action_apply_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/example_promo_action_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/selected_caption1"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/promo_action_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/promo_action_name"
+        android:text="@string/example_promo_action_type"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/promo_action_amount_of_bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/promo_action_type"
+        android:text="@string/example_promo_action_amount_of_bonus"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/promo_action_prohibition"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/promo_action_type"
+        android:layout_alignTop="@+id/promo_action_amount_of_bonus"
+        android:text="Запрет приминения" />
+
+    <ListView
+        android:id="@+id/promo_action_promo_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/promo_action_prohibition"
+        android:layout_below="@+id/promo_action_prohibition"
+        android:background="@android:drawable/dialog_holo_light_frame" >
+    </ListView>
+    
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dip"
+    android:paddingLeft="1dip"
+    android:background="@android:color/transparent" >
+
+        <ImageView
+            android:id="@+id/image_show"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/gen_photo"
+            android:layout_alignParentLeft="true" 
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"
+            android:src="@drawable/device_access_camera"
+           />
+       
+        <TextView
+            android:id="@+id/pick_list_shortname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_show" 
+            android:layout_toLeftOf="@+id/pick_list_value" 
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:background="@android:color/transparent"
+            />
+         <TextView
+            android:id="@+id/pick_list_referer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_toRightOf="@+id/image_show" 
+            android:layout_toLeftOf="@+id/pick_list_value" 
+            android:layout_below="@+id/pick_list_shortname"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip"
+            android:background="@android:color/transparent"
+            />
+         <TextView
+            android:id="@+id/pick_list_value"
+            android:layout_width="95dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/blue"
+            />
+      
+		
+</RelativeLayout>

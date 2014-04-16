@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/number"
+        android:layout_below="@+id/number"
+        android:text="@string/customer_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/number"
+        android:text="@string/amount"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/selected_caption1" />
+
+    <ImageView
+        android:id="@+id/status_icon"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/stub"
+        android:src="@drawable/approved" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/status_icon"
+        android:layout_toRightOf="@+id/status_icon"
+        android:text="@string/document_number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/selected_caption1" />
+
+    <TextView
+        android:id="@+id/shipment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/amount"
+        android:layout_below="@+id/amount"
+        android:text="@string/shipment_date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/customer"
+        android:layout_below="@+id/customer"
+        android:text="@string/address"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/cfr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/shipment_date"
+        android:layout_below="@+id/shipment_date"
+        android:text="@string/cfr"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+
+</RelativeLayout>

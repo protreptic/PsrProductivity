@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/picture_gallery_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/delete_48_7836" />
+
+	<ListView
+	    android:id="@+id/picture_gallery_comments"
+	    android:layout_width="match_parent"
+	    android:layout_height="300dp"
+	    android:layout_below="@+id/picture_gallery_content"
+	    android:layout_margin="5dp"
+	    android:layout_toRightOf="@+id/picture_gallery_image" >
+
+	</ListView>
+
+	<TextView
+	    android:id="@+id/picture_gallery_content"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/picture_gallery_comments"
+	    android:layout_alignTop="@+id/picture_gallery_image"
+	    android:text="Medium Text"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:textColor="@color/selected_caption"
+	    android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+    <item 
+	    android:id="@+id/main_activity_menu_action_show_extras"
+	    android:title="@string/main_activity_menu_action_show_extras"
+	    android:showAsAction="never"></item>
+    <item 
+	    android:id="@+id/main_activity_menu_action_show_sync_journal"
+	    android:title="@string/main_activity_menu_action_show_sync_journal"
+	    android:showAsAction="never"></item>
+	<item 
+	    android:id="@+id/main_activity_menu_action_wipe"
+	    android:title="@string/main_activity_menu_action_wipe"
+	    android:showAsAction="never"></item>
+	<item 
+	    android:id="@+id/main_activity_menu_action_check_update"
+	    android:title="@string/main_activity_menu_action_check_update"
+	    android:showAsAction="never"></item>
+	<item 
+	    android:id="@+id/main_activity_menu_action_user_guide"
+	    android:title="@string/main_activity_menu_action_user_guide"
+	    android:showAsAction="never"></item>
+	<item 
+	    android:id="@+id/main_activity_menu_action_unload_data"
+	    android:title="@string/main_activity_menu_action_unload_data"
+	    android:showAsAction="never"></item>
+	<item 
+	    android:id="@+id/main_activity_menu_action_settings"
+	    android:title="@string/main_activity_menu_action_settings"
+	    android:showAsAction="never"></item>
+	<item 
+	    android:id="@+id/main_activity_menu_action_about"
+	    android:title="@string/main_activity_menu_action_about"
+	    android:showAsAction="never"></item>
+	<item 
+	    android:id="@+id/main_activity_menu_action_sync"
+	    android:title=""
+	    android:icon="@android:drawable/ic_popup_sync"
+	    android:showAsAction="always"></item>
+	<item 
+	    android:id="@+id/main_order_menu_action_show_properties"
+	    android:title=""
+	    android:icon="@drawable/action_about_holo_dark"
+	    android:showAsAction="always"
+	    android:visible="false"></item>
+	<item 
+	    android:id="@+id/main_order_menu_action_show_filters"
+	    android:title=""
+	    android:icon="@drawable/filter_filled_holo_dark"
+	    android:showAsAction="always"
+	    android:visible="false"></item>
+	<item 
+	    android:id="@+id/main_order_menu_action_show_targets"
+	    android:title=""
+	    android:icon="@drawable/alerts_and_states_warning_holo_dark"
+	    android:showAsAction="always"
+	    android:visible="false"></item>
+	<item 
+	    android:id="@+id/main_order_menu_action_product_filter"
+	    android:title="ВСЕ ТОВАРЫ"
+	    android:showAsAction="always"
+	    android:visible="false"></item>
+	<item 
+	    android:id="@+id/main_order_menu_action_recalc_order"
+	    android:title="@string/main_order_menu_action_recalc_order"
+	    android:showAsAction="never"
+	    android:visible="false"></item>
+	<item 
+	    android:id="@+id/main_order_menu_action_show_promo"
+	    android:title=""
+	    android:icon="@android:drawable/ic_menu_myplaces"
+	    android:showAsAction="always"
+	    android:visible="false"></item>
+	<item 
+	    android:id="@+id/main_activity_menu_action_show_track"
+	    android:title=""
+	    android:icon="@android:drawable/ic_menu_mapmode"
+	    android:showAsAction="always"></item>
+
+
+</menu>

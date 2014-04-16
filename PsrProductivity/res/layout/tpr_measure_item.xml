@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/number"
+        android:layout_below="@+id/number"
+        android:text="Пупкин Иван Иванович ИП"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/status_icon"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/approved" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/status_icon"
+        android:layout_toRightOf="@+id/status_icon"
+        android:text="№ 43/456 от 12.07.2013"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/selected_caption1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/customer"
+        android:layout_below="@+id/customer"
+        android:paddingTop="5dp"
+        android:text="Перелазовская улица, дом 10"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:typeface="serif" />
+
+</RelativeLayout>

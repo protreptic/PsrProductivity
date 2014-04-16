@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dip"
+    android:background="@android:color/transparent"
+    android:paddingLeft="1dip" >
+
+    <TextView
+        android:id="@+id/target_index"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/target_gap"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/target_index"
+        android:gravity="bottom"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/target_fact"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/target_gap"
+        android:gravity="bottom"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/target_plan"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/target_fact"
+        android:gravity="bottom"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/target_kpi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/target_plan1"
+        android:layout_marginLeft="20dip"
+        
+        android:gravity="bottom"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+   
+
+</RelativeLayout>

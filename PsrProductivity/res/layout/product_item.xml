@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/csku_list_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/stub"
+        android:src="@drawable/list_a_black" />
+
+    <ImageView
+        android:id="@+id/csku_log_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/csku_list_type"
+        android:layout_below="@+id/csku_list_type"
+        android:contentDescription="@string/stub"
+        android:src="@drawable/rosette_2" />
+
+    <ImageView
+        android:id="@+id/csku_ini_type"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@+id/csku_log_status"
+        android:layout_below="@+id/csku_log_status"
+        android:contentDescription="@string/stub"
+        android:src="@drawable/rating_not_important2" />
+
+    <ImageView
+        android:id="@+id/csku_qualifacation_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@+id/csku_log_status"
+        android:contentDescription="@string/stub"
+        android:src="@drawable/heart_full" />
+	<LinearLayout
+	     android:id="@+id/promotion_indicator_group"
+	     android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/csku_qualifacation_status"
+         android:layout_toRightOf="@+id/csku_qualifacation_status"
+         android:orientation="horizontal"
+	     >
+    <ru.magnat.sfs.widget.PromotionIndicatorView
+        android:id="@+id/promotion_indicator_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
+    </ru.magnat.sfs.widget.PromotionIndicatorView>
+	<ru.magnat.sfs.widget.PromotionIndicatorView
+        android:id="@+id/promotion_indicator_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        >
+    </ru.magnat.sfs.widget.PromotionIndicatorView>
+    <ru.magnat.sfs.widget.PromotionIndicatorView
+        android:id="@+id/promotion_indicator_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="@color/light_blue"
+        >
+    </ru.magnat.sfs.widget.PromotionIndicatorView>
+<ru.magnat.sfs.widget.PromotionIndicatorView
+        android:id="@+id/promotion_indicator_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+         android:background="@color/light_blue"
+         >
+    </ru.magnat.sfs.widget.PromotionIndicatorView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/csku_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/promotion_indicator_group"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@+id/promotion_indicator_group"
+        android:background="@android:color/transparent"
+        android:text="@string/description"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/csku_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pick_list_order2"
+        android:background="@android:color/transparent"
+        android:gravity="right"
+        android:text="@string/price"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/csku_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/csku_name"
+        android:layout_toRightOf="@+id/promotion_indicator_group"
+        android:background="@android:color/transparent"
+        android:text="@string/history"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/csku_store_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/csku_details"
+        android:layout_below="@+id/csku_details"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="right"
+        android:text="@string/warehouse"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/csku_case"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/csku_details"
+        android:layout_toRightOf="@+id/csku_store_info"
+        android:background="@android:color/transparent"
+        android:gravity="right"
+        android:text="@string/tare"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+
+    <ImageView
+        android:id="@+id/picture_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/csku_details"
+        android:layout_alignTop="@+id/csku_name"
+        android:layout_toRightOf="@+id/csku_name"
+        android:contentDescription="@string/stub"
+        android:src="@drawable/picture_empty" />
+
+    <TextView
+        android:id="@+id/pick_list_order2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/csku_price"
+        android:layout_alignTop="@+id/picture_empty"
+        android:gravity="right"
+        android:text="@string/order"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue" />
+
+</RelativeLayout>
