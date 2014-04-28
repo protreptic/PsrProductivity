@@ -119,41 +119,33 @@ public class MapFragment extends Fragment implements OnPositionSavedListener {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 
-		// map=new MapView(getActivity(),
-		// "0n7IqmcMRCnDMVTVPQmNZ-laI9PxFHb_7bSq_4A");
-		map = new MapView(getActivity(),
-				"0n7IqmcMRCnDYfxEdmJWdykrbYwOBFa2xylOxIw");
+		map = new MapView(getActivity(), "0n7IqmcMRCnDYfxEdmJWdykrbYwOBFa2xylOxIw");
 		map.setClickable(true);
-
 		map.getController().setZoom(15);
 		map.setBuiltInZoomControls(true);
 
 		Drawable marker = getResources().getDrawable(R.drawable.marker);
-
-		marker.setBounds(0, 0, marker.getIntrinsicWidth(),
-				marker.getIntrinsicHeight());
-		Drawable yellowmarker = getResources().getDrawable(
-				R.drawable.marker_yellow);
-
-		yellowmarker.setBounds(0, 0, marker.getIntrinsicWidth(),
-				marker.getIntrinsicHeight());
+		marker.setBounds(0, 0, marker.getIntrinsicWidth(), marker.getIntrinsicHeight());
+		
+		Drawable yellowmarker = getResources().getDrawable(R.drawable.marker_yellow);
+		yellowmarker.setBounds(0, 0, marker.getIntrinsicWidth(), marker.getIntrinsicHeight());
 
 		Location currentLocation = Globals.getLastLocation();
-		if (currentLocation != null)
-			map.getController().setCenter(
-					Utils.getGeoPointFromLocation(currentLocation));
+		if (currentLocation != null) {
+			map.getController().setCenter(Utils.getGeoPointFromLocation(currentLocation));
+		}
+		
 		TaskVisitJournal visits = new TaskVisitJournal(MainActivity.sInstance);
 		visits.SetMasterTask(_workday);
 		visits.Select(new Date(), new Date(), DateVariant.BEGIN, false);
 		QueryGetRoute route = new QueryGetRoute(MainActivity.sInstance);
 		route.Select();
 		_routeOverlay = new CustomRouteOverlay(route);
-		_visitsOverlay = new MarkersOverlay(marker, fillVisitsArray(visits,
-				route));
-		_outletsOverlay = new MarkersOverlay(yellowmarker,
-				fillOutletsArray(visits));
+		_visitsOverlay = new MarkersOverlay(marker, fillVisitsArray(visits, route));
+		_outletsOverlay = new MarkersOverlay(yellowmarker, fillOutletsArray(visits));
 		route.close();
 		visits.close();
+		
 		_currentOverlay = new CurrentLocationOverlay(getActivity(), map);
 		_currentOverlay.enableMyLocation();
 		map.getOverlays().add(_currentOverlay);
@@ -201,7 +193,7 @@ public class MapFragment extends Fragment implements OnPositionSavedListener {
                       items.get(i).getSnippet(),
                       Toast.LENGTH_SHORT).show();
 			} catch (Exception e){
-				Log.v(MainActivity.LOG_TAG,"Ошибка обработчика нажатия на карте: "+e.getMessage());
+				Log.v(MainActivity.LOG_TAG,"пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: "+e.getMessage());
 			}
 			return (true);
 		}
@@ -295,10 +287,8 @@ public class MapFragment extends Fragment implements OnPositionSavedListener {
 
 	}
 
-	public void onPositionSaved(GenericEntity sender,
-			DocTrackLineEntity position) {
+	public void onPositionSaved(GenericEntity sender, DocTrackLineEntity position) {
 		_routeOverlay.addPoint(position.getLocation());
-
 	}
 
 }
