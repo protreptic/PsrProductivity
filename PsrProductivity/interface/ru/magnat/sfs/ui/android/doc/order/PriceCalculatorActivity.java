@@ -1,15 +1,13 @@
 package ru.magnat.sfs.ui.android.doc.order;
 
-import java.text.NumberFormat;
 import java.util.ArrayList;
-import java.util.Formatter;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-import ru.magnat.sfs.android.R;
 import ru.magnat.sfs.android.MainActivity;
+import ru.magnat.sfs.android.R;
 import ru.magnat.sfs.bom.SqlCriteria;
 import ru.magnat.sfs.bom.order.DocOrderEntity;
 import ru.magnat.sfs.bom.ref.productitem.RefProductItem;

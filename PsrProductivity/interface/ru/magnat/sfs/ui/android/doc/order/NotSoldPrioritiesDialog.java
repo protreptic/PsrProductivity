@@ -1,24 +1,13 @@
 package ru.magnat.sfs.ui.android.doc.order;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.concurrent.CopyOnWriteArraySet;
 
 import ru.magnat.sfs.android.R;
-import ru.magnat.sfs.bom.order.DocOrderEntity;
-import ru.magnat.sfs.bom.order.DocOrderLineEntity;
-import ru.magnat.sfs.bom.query.order.PickFilter;
-import ru.magnat.sfs.bom.query.order.QueryGetOrderPickListEntity;
-import ru.magnat.sfs.bom.query.order.QueryGetOrderPickListOrdered;
 import ru.magnat.sfs.ui.android.SfsContentView;
 import android.content.Context;
 import android.graphics.Typeface;
-import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

@@ -16,6 +16,7 @@ import android.widget.ListView;
 
 public class QueryGetTprDiscountsListView extends GenericListView< QueryGetTprDiscounts,  QueryGetTprDiscountsEntity, RefOutletEntity> implements Closeable {
 
+	@SuppressWarnings("unused")
 	private final QueryGetTprDiscounts.TprDiscountVariant _type;
 	public static ListView mListView;
 	
